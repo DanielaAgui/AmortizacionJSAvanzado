@@ -8,7 +8,6 @@ let cuotaVariable = (monto,tasa,plazo) => {
 
     for (let i = 1; i <= plazo; i++) {
         
-        monto;
         let interes = monto * (tasa / 100);
         let cuota = amortizacion + interes;
         monto -= amortizacion;
