@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de amortización cuota fija</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cabecero">
+        <div class="titulo">
+            <h1>Tabla de amortización con cuota fija</h1>
+        </div>
+    </div>
+
+    <div class="formulario">
+        <form class="forma" onsubmit="return false" id="forma">
+            <label for="monto"></label><br>
+            <input type="number" id="monto" step="any" placeholder="Ingrese el monto del crédito"><br>
+            <label for="tasa"></label><br>
+            <input type="number" id="tasa" step="any" placeholder="Ingrese la tasa de interés mensual"><br>
+            <label for="plazo"></label><br>
+            <input type="number" id="plazo" step="any" placeholder="Ingrese el plazo en meses"><br>
+            <div class="contenedor_boton">
+                <a href="cuotas.html">
+                <button class="boton" onclick="calcularCuota()">Calcular</button>
+                </a>
+            </div>
+        </form>
+        <div class="contenedor_validador" id="validador"></div>
+    </div>
+
+    <div id="cuotas" class="contenedor">
+        <div class="elemento">
+            <div id="periodo"></div>
+            <div id="valor_periodo" class="elemento_valor"></div>
+        </div>
+        <div class="elemento">
+            <div id="interes"></div>
+            <div id="valor_interes" class="elemento_valor"></div>
+        </div>
+        <div class="elemento">
+            <div id="amortizacion"></div>
+            <div id="valor_amortizacion" class="elemento_valor"></div>
+        </div>
+        <div class="elemento">
+            <div id="cuota"></div>
+            <div id="valor_cuota" class="elemento_valor"></div>
+        </div>
+        <div class="elemento">
+            <div id="saldo"></div>
+            <div id="valor_saldo" class="elemento_valor"></div>
+        </div>
+    </div>
+
+    <script src="cuotaFija.js"></script>
+</body>
+</html>
