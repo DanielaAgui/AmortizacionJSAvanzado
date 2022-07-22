@@ -9,7 +9,7 @@ let cuotaFija = (monto,tasa,plazo) => {
     let amortizacion;
     let interes;
 
-    for (let i = 0; i <= plazo; i++) {
+    for (let i = 1; i <= plazo; i++) {
 
             interes = monto * tasa / 100;
             amortizacion = cuota - interes;
